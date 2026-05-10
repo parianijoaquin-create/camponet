@@ -20,12 +20,12 @@ export default function ProducerDashboard() {
   return (
     <div className="p-6 max-w-6xl mx-auto">
       {/* Page header */}
-      <div className="flex items-start justify-between mb-6 gap-4">
+      <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-6 gap-4">
         <div>
           <h1 className="text-2xl font-bold text-slate-900">Buen día, Martín</h1>
           <p className="text-slate-500 text-sm mt-0.5">Estancia La Esperanza · Río Cuarto, Córdoba</p>
         </div>
-        <button onClick={() => navigate('/productor/solicitar')} className="btn-primary flex-shrink-0">
+        <button onClick={() => navigate('/productor/solicitar')} className="btn-primary flex-shrink-0 w-full sm:w-auto justify-center">
           <Plus size={16} />
           Solicitar transporte
         </button>
